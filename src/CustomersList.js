@@ -67,7 +67,7 @@ render() {
 				<td>{c.address}</td>
 				<td>{c.description}</td>
 				<td>
-				<button  onClick={(e)=>  this.handleDelete(e,c.pk) }> Delete</button>
+				<button className="btn btn-danger"  onClick={(e)=>  this.handleDelete(e,c.pk) }> Delete</button>
 				<a  href={"/customer/" + c.pk}> Update </a>
 				</td>
 			</tr>)}
